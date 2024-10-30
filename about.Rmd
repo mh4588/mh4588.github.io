@@ -1,0 +1,65 @@
+---
+title: "Resume and Experiences"
+---
+## Education
+**Columbia University Mailman School of Public Health**	- New York, NY          
+Candidate for Master’s of Science, Biostatistics - Expected May 2026
+
+Relevant Coursework: Data Science I, Biostatistical Methods I, Probability, Introduction to Epidemiology
+
+**Wellesley College** - Wellesley, MA	   				                     	        
+Bachelor of Arts, Economics Major and Statistics Minor - May 2024   
+
+Relevant Coursework: Advanced Econometrics and Data Science, Finance Theory and Investments, Regression Analysis and Statistical Models, Multivariate Data Analysis, Causal Inference, Econometrics
+
+## Experiences 
+**The Costs of Career Success: Career Socialization and Chinese American Well-Being**    -     September 2023-ongoing
+
+**Research Assistant, Wellesley College**:									   Wellesley, MA	
+Applied national-scale survey data from the National Latino and Asian-American Study to investigate the relationship between socioeconomic achievement, health, and well-being in Asian-American communities using statistical models.
+
+
+**Using Data Science Methods To Learn International Trade**			                      -          June - August 2023
+
+
+**Research Assistant, Massachusetts Institute of Technology**:				            Cambridge, MA (virtual)
+Utilized Python and regular expressions to extract data from international trade agreements, creating comprehensive datasets of trade rules.
+Created visualizations in R demonstrating the relationships between types of goods and policy restrictiveness.
+
+
+**MIT Development Lab**								            June – September 2022
+
+**Research Assistant**: Cambridge, MA (virtual)
+
+Responsible for researching the viability of bicycle transportation in low-income countries by analyzing hundreds of records of bicycle sensor data and creating a dataset of bicycle trips and developed visualizations using field survey and interview data describing bicycle usage in Malawi and Ghana.
+Collaborated with a research group to create and present a report to USAID about bicycle access and usage patterns.
+
+
+**Santa Fe Institute**									                  June – August 2021
+
+**Faculty Data Intern**:										  Santa Fe, NM (virtual)
+
+Updated 20+ years of faculty records using Salesforce and Dataloader to ensure accuracy of data on online databases of resources. Organized data using Excel conditional formatting, filters, and functions.
+Analyzed patterns of faculty activity through network mapping to illustrate faculty participation rates over time.
+Actively participated in weekly Education Department meetings and learned about nonprofit operations.
+
+## Projects
+
+**Music and Mind: Examining the Relationship between Music Listening Behaviors and Self-Reported Mental Health** -  May 2023
+
+Co-authored a data analysis project applying advanced statistical modeling techniques with R to study relationships between music listening patterns and self-reported mental health indicators.
+Awarded Honorable Mention in the Spring 2023 Undergraduate Statistics Class Project Competition.
+
+
+**Predicting Fraudulent Transactions in E-Commerce** -  December 2022
+
+Designed a logistic regression model to find the strongest predictors of fraudulent online transactions.
+Analyzed simulated mobile financial transaction data using R to understand patterns within the data that lead to fraudulent transactions based on the model.
+
+## Certifications and Skills
+**Certifications: **
+Wellesley College Quantitative Analysis Institute Certificate: Intensive applied statistics and data analysis curriculum, R, SQL, ggplot
+
+**Computer Skills: **
+Stata, Python, Regular Expressions, matplotlib, KoBo Toolbox, Microsoft Office: MS Word, Powerpoint, Advanced Excel, Google Suite
+
