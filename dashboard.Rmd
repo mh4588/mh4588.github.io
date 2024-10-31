@@ -17,6 +17,10 @@ library(plotly)
 
 ```{r}
 data(rest_inspec)
+
+set.seed(8105)
+#Take a random sample from the dataset so it doesn't take up too much memory
+rest_inspec <- slice_sample(rest_inspec, n=10000)
 ```
 
 Column {data-width=500}
