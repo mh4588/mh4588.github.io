@@ -47,7 +47,7 @@ rest_inspec |> #distribution of scores by borough
 #Warning type based on the grade of restaurant the warning was spotted at
 rest_inspec |>
 mutate(critical_flag = fct_reorder(critical_flag, grade)) |> 
-plot_ly(x = ~grade, y = ~critical_flag, type = 'bar', name = 'Restaurant Grades vs.Warning Types', color= ~critical_flag) |>
+plot_ly(x = ~grade, y = ~critical_flag, type = 'bar', color= ~critical_flag) |>
   layout(yaxis = list(title = "Number of Warnings"), barmode = 'group')
 #Warnings from restaurants with unknown grades were omitted by R
 ```
