@@ -1,0 +1,53 @@
+---
+title: "Analyzing NYC Restaurant Inspections"
+author: Maggie Hsu
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+
+library(tidyverse)
+library(p8105.datasets)
+library(plotly)
+```
+
+```{r}
+data(rest_inspec)
+```
+
+Column {data-width=600}
+-----------------------------------------------------------------------
+
+### Chart A
+
+```{r}
+
+```
+
+Column {data-width=400}
+-----------------------------------------------------------------------
+
+### Chart B
+
+```{r}
+#Boxplot comparing restaurant rating distributions by borough
+rest_inspec |> #distribution of scores by borough
+  filter(is.na(boro)==FALSE, boro != "Missing") |> #Remove NAs and  observations with missing borough values
+  mutate(boro = fct_reorder(boro, score)) |> 
+    plot_ly(y = ~score, color = ~boro, type = "box", colors = "viridis")
+```
+
+### Chart C
+
+```{r}
+#Warning type based on the grade of restaurant the warning was spotted at
+rest_inspec |>
+mutate(critical_flag = fct_reorder(critical_flag, grade)) |> 
+plot_ly(x = ~grade, y = ~critical_flag, type = 'bar', name = 'Restaurant Grades vs.Warning Types', color= ~critical_flag) |>
+  layout(yaxis = list(title = "Number of Warnings"), barmode = 'group')
+#Warnings from restaurants with unknown grades were omitted by R
+```
