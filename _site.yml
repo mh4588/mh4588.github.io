@@ -5,7 +5,7 @@ navbar:
   right:
     - text: "About Me"
       href: about.html
-    - text: "Plot_ly Dashboard"
+    - text: "Dashboard"
       href: dashboard.html
     - icon: fa-envelope fa-lg
       href: mailto:<mh4588@cumc.columbia.edu>
