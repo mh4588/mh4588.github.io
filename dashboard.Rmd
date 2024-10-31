@@ -26,7 +26,7 @@ rest_inspec <- slice_sample(rest_inspec, n=10000)
 Column {data-width=500}
 -----------------------------------------------------------------------
 
-### Chart A
+### Distribution of Restaurant Ratings by Borough
 
 ```{r}
 #Boxplot comparing restaurant rating distributions by borough
@@ -39,7 +39,7 @@ rest_inspec |> #distribution of scores by borough
 Column {data-width=500}
 -----------------------------------------------------------------------
 
-### Chart B
+### Restaurant Zip Codes vs. Scores
 
 ```{r}
 #Compare zip code to scores
@@ -51,7 +51,7 @@ rest_inspec |>
   layout(xaxis = list(tickformat = "digits"))
 ```
 
-### Chart C
+### Types of Warnings Based on the Restaurant Grade the Warning Was Spotted At
 
 ```{r}
 #Warning type based on the grade of restaurant the warning was spotted at
