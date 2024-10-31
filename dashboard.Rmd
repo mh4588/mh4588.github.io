@@ -25,7 +25,11 @@ Column {data-width=500}
 ### Chart A
 
 ```{r}
-
+#Boxplot comparing restaurant rating distributions by borough
+rest_inspec |> #distribution of scores by borough
+  filter(is.na(boro)==FALSE, boro != "Missing") |> #Remove NAs and  observations with missing borough values
+  mutate(boro = fct_reorder(boro, score)) |> 
+    plot_ly(y = ~score, color = ~boro, type = "box", colors = "viridis")
 ```
 
 Column {data-width=500}
@@ -34,11 +38,13 @@ Column {data-width=500}
 ### Chart B
 
 ```{r}
-#Boxplot comparing restaurant rating distributions by borough
-rest_inspec |> #distribution of scores by borough
-  filter(is.na(boro)==FALSE, boro != "Missing") |> #Remove NAs and  observations with missing borough values
-  mutate(boro = fct_reorder(boro, score)) |> 
-    plot_ly(y = ~score, color = ~boro, type = "box", colors = "viridis")
+#Compare zip code to scores
+rest_inspec |>
+  mutate(label = str_c("Score", score)) |> 
+  plot_ly(
+    x = ~zipcode, y = ~score, type = "scatter", mode = "markers",
+    color = ~zipcode, text = ~label, alpha = 0.5) |>
+  layout(xaxis = list(tickformat = "digits"))
 ```
 
 ### Chart C
